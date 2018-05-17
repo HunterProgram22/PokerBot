@@ -23,7 +23,7 @@ class Tournament(object):
                     6: "Middle Position",
                     7: "Late Position",
                     8: "Late Position",
-                    9: "Late Position",
+                    9: "Button",
                     }
         elif self.players == 6:
             return {
@@ -32,5 +32,5 @@ class Tournament(object):
                     3: "Middle Position",
                     4: "Middle Position",
                     5: "Late Position",
-                    6: "Late Position",
+                    6: "Button",
                     }

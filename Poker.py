@@ -17,8 +17,13 @@ while True:
     cards = input("Enter your cards: ")
     if cards == "":
         break
-    position = int(input("Enter your position: "))
+    try:
+        position = int(input("Enter your position: "))
+    except ValueError:
+        continue
     Main.action(cards, position)
+
+
 
 
 #TESTING
