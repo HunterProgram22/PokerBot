@@ -6,11 +6,11 @@ from Strategy import PositionStrategy
 
 
 players = int(input("Enter the number of players for the tournament: "))
-name = input("Enter the tournament name: ")
-buyin = float(input("Enter the tournament buyin: "))
-speed = input("Enter the tournament speed: ")
+# name = input("Enter the tournament name: ")
+# buyin = float(input("Enter the tournament buyin: "))
+# speed = input("Enter the tournament speed: ")
 
-Tourn = Tournament(players, name, buyin, speed)
+Tourn = Tournament(players)
 Main = PositionStrategy(Tourn)
 
 while True:

@@ -1,7 +1,7 @@
 class Tournament(object):
     """A tournament class to define various structures."""
 
-    def __init__(self, players, type, buyin, speed="Standard"):
+    def __init__(self, players, type="Double-Up SNG", buyin=10.00, speed="Turbo"):
         self.players = players
         self.type = type
         self.buyin = buyin
