@@ -19,7 +19,6 @@ def clean_cards(cards):
     cards = cards.upper()
     if 'S' in cards:
         cards = cards[:2] + cards[2:].lower()
-    print(cards)
     if cards in REVERSE_HANDS:
         if len(cards) == 2:
             cards = cards[1] + cards[0]
@@ -32,22 +31,20 @@ def clean_cards(cards):
             cards = cards[1] + cards[0]
         else:
             cards = cards[1] + cards[0] + cards[2]
-    print(cards)
     return cards
 
 while True:
     cards = input("Enter your cards: ")
-    print(cards)
     if cards == "":
         break
     # Clean data to account for S capital for suited and entering
     # data in reverse order.
     cards = clean_cards(cards)
-    # try:
-    #     position = int(input("Enter your position: "))
-    # except ValueError:
-    #     continue
-    # Main.action(cards, position)
+    try:
+        position = int(input("Enter your position: "))
+    except ValueError:
+        continue
+    Main.action(cards, position)
 
 
 
