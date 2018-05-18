@@ -9,7 +9,9 @@ class PositionStrategy(object):
 
     def action(self, cards, position):
         self.cards = cards
-        if self.tournament_position_dict[position] == "Early Position":
+        if self.tournament_position_dict[position] == "Small Blind":
+            self.small_blind_action()
+        elif self.tournament_position_dict[position] == "Early Position":
             self.early_position_action()
         elif self.tournament_position_dict[position] == "Middle Position":
             self.middle_position_action()
@@ -17,6 +19,14 @@ class PositionStrategy(object):
             self.late_position_action()
         elif self.tournament_position_dict[position] == "Button":
             self.button_action()
+
+    def small_blind_action(self):
+        if self.cards in PositionStrategy.TIER_ONE:
+            print("Raise limper or re-raise any standard bet.")
+        elif self.cards in PositionStrategy.TIER_TWO:
+            print("Raise limper or call any standard bet.")
+        else:
+            print("Call in unraised pot, else fold.")
 
     def early_position_action(self):
         if self.cards in PositionStrategy.TIER_ONE:

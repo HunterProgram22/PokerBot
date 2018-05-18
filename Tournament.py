@@ -15,7 +15,7 @@ class Tournament(object):
     def create_position_dictionary(self):
         if self.players == 9:
             return {
-                    1: "Early Position",
+                    1: "Small Blind",
                     2: "Early Position",
                     3: "Early Position",
                     4: "Middle Position",
@@ -27,7 +27,7 @@ class Tournament(object):
                     }
         elif self.players == 6:
             return {
-                    1: "Early Position",
+                    1: "Small Blind",
                     2: "Early Position",
                     3: "Middle Position",
                     4: "Middle Position",
