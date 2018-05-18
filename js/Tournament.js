@@ -12,7 +12,7 @@ function Tournament(players, type, buyin, speed) {
   this.position_dictionary = function() {
     if (this.players == 9) {
       dict = {
-        1: "Early Position",
+        1: "Small Blind",
         2: "Early Position",
         3: "Early Position",
         4: "Middle Position",
@@ -24,7 +24,7 @@ function Tournament(players, type, buyin, speed) {
         };
       } else if (this.players == 6) {
         dict = {
-            1: "Early Position",
+            1: "Small Blind",
             2: "Early Position",
             3: "Middle Position",
             4: "Middle Position",
@@ -40,5 +40,5 @@ function Tournament(players, type, buyin, speed) {
 var Tourn = new Tournament(6, "Double-up", 10.00, "Turbo");
 
 
-window.alert(Tourn.getInfo());
-window.alert(Tourn.position_dictionary()[6]);
+// window.alert(Tourn.getInfo());
+// window.alert(Tourn.position_dictionary()[6]);

@@ -1,8 +1,29 @@
 <html>
+<head>
 
+</head>
 <body>
-  <h1>Test Display</h1>
+  <h1>PokerBot</h1>
+    <fieldset>
+      <legend>Hand</legend>
+      Cards:
+      <br>
+      <input type="text" name="cards" id="cards">
+      <br>
+      Postition:
+      <br>
+      <input type="text" name="position" id="position">
+      <br>
+      <br>
+      <input type="radio" name="suited" value="suited">Suited<br>
+      <input type="radio" name="suited" value="unsuited" checked>Unsuited<br>
+      <br>
+      <button id="cardSubmit">Submit</button>
+    </fieldset>
+
+  <p id="Decision">No Action</p>
+
 </body>
-  <script src="js/Tournament.js"></script>
-  <script src="js/Strategy.js"></script>
+<script src="js/Tournament.js"></script>
+<script src="js/Strategy.js"></script>
 </html>
