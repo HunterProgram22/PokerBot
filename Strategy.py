@@ -1,6 +1,6 @@
 class PositionStrategy(object):
-    TIER_ONE = ["AA", "KK", "QQ", "JJ", "AK"]
-    TIER_TWO = ["TT", "99", "88", "77", "AQ", "AJ"]
+    TIER_ONE = ["AA", "KK", "QQ", "JJ", "AK", "AKs"]
+    TIER_TWO = ["TT", "99", "88", "77", "AQ", "AJ", "AQs", "AJs"]
     TIER_THREE = ["ATs", "KQs", "QJs", "JTs"]
     TIER_FOUR = ["66", "55", "44", "33", "22","A9s", "109s", "98s"]
 
